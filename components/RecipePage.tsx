@@ -1,6 +1,6 @@
 
 import React, { useRef } from 'react';
-import { Recipe } from '../types.ts';
+import { Recipe } from '../types';
 
 interface RecipePageProps {
   recipe: Recipe;
@@ -62,7 +62,6 @@ const RecipePage: React.FC<RecipePageProps> = ({ recipe, onExportSingle }) => {
           </div>
 
           <div className="flex flex-1 flex-col sm:flex-row gap-4 overflow-hidden min-h-0">
-            {/* Ingredientes & Macros */}
             <div className="w-full sm:w-[40%] flex flex-col gap-3 h-auto sm:h-full overflow-hidden">
               <div className="flex-1 bg-white rounded-2xl border-[2px] sm:border-4 p-3 sm:p-4 shadow-sm flex flex-col relative overflow-hidden" style={{ borderColor: accentColor }}>
                  <div className="text-pink-700 text-[7pt] sm:text-[8pt] font-black uppercase mb-2 flex items-center gap-2 border-b border-pink-50 pb-1.5">
@@ -96,7 +95,6 @@ const RecipePage: React.FC<RecipePageProps> = ({ recipe, onExportSingle }) => {
               </div>
             </div>
 
-            {/* Pasos */}
             <div className="w-full sm:w-[60%] flex flex-col h-auto sm:h-full overflow-hidden">
               <div className="bg-white rounded-2xl border-[2px] sm:border-4 p-3 sm:p-4 flex-1 shadow-sm flex flex-col overflow-hidden" style={{ borderColor: accentColor }}>
                  <div className="text-pink-700 text-[7pt] sm:text-[8pt] font-black uppercase mb-2 flex items-center gap-2 border-b border-pink-50 pb-1.5">
