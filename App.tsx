@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { RECIPE_SCHEMA_PROMPT, enrichRecipeWithAutoTags } from './services/recipeService.ts';
-import { loadLibraryFromDrive, saveLibraryToDrive } from './services/driveService.ts';
-import { Recipe, RecipeBook, UserSession } from './types.ts';
-import RecipePage from './components/RecipePage.tsx';
-import CoverPage from './components/CoverPage.tsx';
+import { RECIPE_SCHEMA_PROMPT, enrichRecipeWithAutoTags } from './services/recipeService';
+import { loadLibraryFromDrive, saveLibraryToDrive } from './services/driveService';
+import { Recipe, RecipeBook, UserSession } from './types';
+import RecipePage from './components/RecipePage';
+import CoverPage from './components/CoverPage';
 
 const GOOGLE_CLIENT_ID = "634563853153-f7pgho436skv0v2p958e94h0be9pbtat.apps.googleusercontent.com";
 
