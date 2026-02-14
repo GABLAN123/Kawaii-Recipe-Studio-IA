@@ -119,18 +119,17 @@
         to { opacity: 1; transform: translateY(0); }
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "react-dom": "https://esm.sh/react-dom@^19.2.4",
-    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/"
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="text-pink-900 selection:bg-pink-100">
     <div id="root">
@@ -139,7 +138,7 @@
         <p style="font-family: sans-serif; color: #ffb7c5; font-weight: bold; margin-top: 1rem;">Abriendo el estudio...</p>
       </div>
     </div>
-    <script type="module" src="index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <!-- Vite inyectará el script compilado aquí -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
