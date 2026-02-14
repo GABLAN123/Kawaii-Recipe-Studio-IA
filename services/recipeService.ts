@@ -1,5 +1,5 @@
 
-import { Recipe } from "../types.ts";
+import { Recipe } from "../types";
 
 export const RECIPE_SCHEMA_PROMPT = {
   type: "array",
