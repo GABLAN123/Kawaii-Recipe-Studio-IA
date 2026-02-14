@@ -1,4 +1,3 @@
-
 import { Recipe } from "../types";
 
 export const RECIPE_SCHEMA_PROMPT = {
@@ -26,9 +25,6 @@ export const RECIPE_SCHEMA_PROMPT = {
   }
 };
 
-/**
- * Lógica nutricional que asigna automáticamente tags basados en los valores
- */
 export const enrichRecipeWithAutoTags = (recipe: Recipe): Recipe => {
   const autoTags = [...recipe.tags];
   
@@ -37,7 +33,6 @@ export const enrichRecipeWithAutoTags = (recipe: Recipe): Recipe => {
   if (recipe.macros.protein > 20) autoTags.push("[ALTO EN PROTEÍNA]");
   if (recipe.macros.kcal < 300) autoTags.push("[BAJO EN CALORÍAS]");
   
-  // Limpiar duplicados y normalizar
   const uniqueTags = Array.from(new Set(autoTags.map(t => t.toUpperCase())));
   
   return {
