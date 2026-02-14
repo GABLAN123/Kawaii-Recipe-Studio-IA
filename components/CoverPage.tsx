@@ -1,6 +1,6 @@
 
 import React, { useMemo, useRef } from 'react';
-import { Recipe } from '../types.ts';
+import { Recipe } from '../types';
 
 interface CoverPageProps {
   title: string;
