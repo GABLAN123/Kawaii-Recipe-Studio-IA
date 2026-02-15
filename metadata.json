@@ -1,0 +1,8 @@
+
+{
+  "name": "Kawaii Recipe Studio (Cloud Edition)",
+  "description": "Estudio de diseño de recetarios 100% gratuito. Etiquetado inteligente (Keto, Sin Azúcar, Proteína), maquetación profesional A5 y sincronización privada con Google Drive.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
