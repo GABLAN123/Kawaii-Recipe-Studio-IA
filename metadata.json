@@ -1,8 +1,0 @@
-
-{
-  "name": "Kawaii Recipe Studio (Private Edition)",
-  "description": "Crea recetarios profesionales en formato ebook con total privacidad. Usa el Prompt Builder, genera tus recetas e importa el JSON. Sincronizado con Google Drive.",
-  "requestFramePermissions": [
-    "camera"
-  ]
-}
